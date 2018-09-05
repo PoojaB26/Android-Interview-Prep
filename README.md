@@ -7,7 +7,29 @@ A collection of materials, interview questions with answers, Android tips, best 
 ### Data Storage And Access
 * [How to access data in Content Providers?](#1)
 
+dfdfdf
 
+s
+df
+
+sd
+f
+s
+d
+f
+sd
+f
+
+sd
+f
+sd
+f
+
+sdf
+
+sd
+f
+sd
 #### A : Access data in Content Providers<a name="#1"></a>
 Start by making sure your Android application has the necessary read access permissions. Then, get access to the ContentResolver object by calling getContentResolver() on the Context object, and retrieving the data by constructing a query using ContentResolver.query().
 
