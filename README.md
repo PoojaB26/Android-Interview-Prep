@@ -30,7 +30,7 @@ sdf
 sd
 f
 sd
-#### A : Access data in Content Providers<a name="#cp1"></a>
+#### A : Access data in Content Providers <a name="#cp1"></a>
 Start by making sure your Android application has the necessary read access permissions. Then, get access to the ContentResolver object by calling getContentResolver() on the Context object, and retrieving the data by constructing a query using ContentResolver.query().
 
 The **ContentResolver.query()** method returns a Cursor, so you can retrieve data from each column using Cursor methods.
