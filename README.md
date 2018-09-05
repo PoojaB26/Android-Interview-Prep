@@ -3,50 +3,15 @@
 A collection of materials, interview questions with answers, Android tips, best practices specially for Android interviews.
 
 ## Interview Questions
-[Testing this](#test)
-df
+
+### Data Storage And Access
+* [How to access data in Content Providers?](#1)
 
 
-dsf
-s
-df
-s
-df
-s
-df
+#### A : Access data in Content Providers<a name="#1"></a>
+Start by making sure your Android application has the necessary read access permissions. Then, get access to the ContentResolver object by calling getContentResolver() on the Context object, and retrieving the data by constructing a query using ContentResolver.query().
 
-sd
-f
-sd
-f
-sd
-f
-sd
-f
-s
-df
-
-sd
-f
-s
-df
-s
-df
-
-sd
-f
-sd
-f
-sd
-f
-sd
-f
-sd
-f
-sd
-
-Test<a name="test"></a>
-
+The **ContentResolver.query()** method returns a Cursor, so you can retrieve data from each column using Cursor methods.
 
 ### References
 https://android.jlelse.eu/android-interview-questions-cheat-sheet-96ea01c88def<br>
