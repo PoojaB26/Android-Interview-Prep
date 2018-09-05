@@ -39,8 +39,11 @@ The **ContentResolver.query()** method returns a Cursor, so you can retrieve dat
 
 
 
-## <a name="MITWIT"></a>[MIT Women's Technology Program ](http://wtp.mit.edu//)
->The MIT Women's Technology Program (WTP) is a rigorous four-week summer academic and residential experience where female high school students explore engineering through hands-on classes, labs, and team-based projects in the summer after 11th grade .
+## <a name="MITWIT"></a> A : Access data in Content Providers
+Start by making sure your Android application has the necessary read access permissions. Then, get access to the ContentResolver object by calling getContentResolver() on the Context object, and retrieving the data by constructing a query using ContentResolver.query().
+
+The **ContentResolver.query()** method returns a Cursor, so you can retrieve data from each column using Cursor methods.
+
 
 ### References
 https://android.jlelse.eu/android-interview-questions-cheat-sheet-96ea01c88def<br>
