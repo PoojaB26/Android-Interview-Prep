@@ -6,40 +6,27 @@ A collection of materials, interview questions with answers, Android tips, best 
 
 ### Data Storage And Access
 * [How to access data in Content Providers?](#cp1)
-* [MIT Women's Technology Program](#MITWIT)
-The MIT Women's Technology Program (WTP) is a rigorous four-week summer academic and residential experience where female high school students explore engineering through hands-on classes, labs, and team-based projects in the summer after 11th grade .
+* [Content Values vs Cursor](#cp2)
 
-dfdfdf
-
-s
-df
-
-sd
-f
-s
-d
-f
-sd
-f
-
-sd
-f
-sd
-f
-
-sdf
-
-sd
-f
-sd
+### Services
+* [Difference between Service & Intent Service](#sc1)
 
 
-## <a name="cp1"></a> A : Access data in Content Providers
+#### <a name="cp1"></a> A : Access data in Content Providers
 Start by making sure your Android application has the necessary read access permissions. Then, get access to the ContentResolver object by calling getContentResolver() on the Context object, and retrieving the data by constructing a query using ContentResolver.query().
 
 The **ContentResolver.query()** method returns a Cursor, so you can retrieve data from each column using Cursor methods.
 
+#### <a name="cp2"></a> A: Content Values vs Cursor
+Content Values is a name value pair used to insert and update values into database tables. Content Value objects will be passed to SQLiteDatabase object's insert or update function. 
+
+Cursor is a temp buffer which stores results from the SQLiteDatabase
+
+#### <a name="sc1"></a> Difference between Service & Intent Service
+Service is the base class for Android services that can be extended to create any service. A class that directly extends Service runs on the main thread so it will block the UI (if there is one) and should therefore either be used only for short tasks or should make use of other threads for longer tasks.
+IntentService is a subclass of Service that handles asynchronous requests (expressed as “Intents”) on demand. Clients send requests through startService(Intent) calls. The service is started as needed, handles each Intent in turn using a worker thread, and stops itself when it runs out of work.
 
 ### References
 https://android.jlelse.eu/android-interview-questions-cheat-sheet-96ea01c88def<br>
 https://android.jlelse.eu/android-interview-questions-cheat-sheet-part-ii-bea0633f0da7
+http://skillgun.com/android/content-providers/interview-questions-and-answers/paper/28
