@@ -7,10 +7,18 @@ A collection of materials, interview questions with answers, Android tips, best 
 ### Data Storage And Access
 * [How to access data in Content Providers?](#cp1)
 * [Content Values vs Cursor](#cp2)
+* [Steps to create Content Provider](#cp3)
 
 ### Services
 * [Difference between Service & Intent Service](#sc1)
 
+
+
+#### <a name="cp3"></a> A : Steps to create Content Providers
+1. Create a Table Contract
+2. Setting up the DatabaseHelper
+3. Setting up the Content Provider
+4. Declare it on the manifest
 
 #### <a name="cp1"></a> A : Access data in Content Providers
 Start by making sure your Android application has the necessary read access permissions. Then, get access to the ContentResolver object by calling getContentResolver() on the Context object, and retrieving the data by constructing a query using ContentResolver.query().
